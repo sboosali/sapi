@@ -37,10 +37,16 @@ library
                      TypeFamilies FunctionalDependencies
                      ScopedTypeVariables StandaloneDeriving
 
+ include-dirs:     native
+ c-sources:        native/recognition.c
+ includes:         native/recognition.h
+ install-includes: native/recognition.h
+
  exposed-modules:
   SAPI
   SAPI.Types
   SAPI.Main
+  SAPI.Bindings
 
  other-modules:
   SAPI.Extra
